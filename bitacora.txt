@@ -31,3 +31,8 @@
 	recursiva			es recursiva, porque hay
 				 	una desviacion entre estas
 					ramas
+(24)	add . + commit -m "Paso 24"
+(25)	checkout develop
+(26)	merge --no-ff feature/Ticket220
+(27)	merge --no-ff feature/Ticket221	hay conflictos y se arreglan
+	add . + commit
