@@ -10,3 +10,34 @@
 (02)	anhadir nombre y apellidos
 (03)	add . + commit -m "Paso 03"
 (04)	push
+(06)	add . + commit -m "Paso 06"
+(07)	branch develop
+(08)	branch feature/Ticket220
+	checkout feature/Ticket220
+(10)	add . + commit -m "Paso 10"
+(11)	checkout develop
+(12)	branch feature/Ticket221
+	checkout feature/Ticket221
+(14)	stash
+	checkout feature/Ticket220
+(16)	add . + commit -m "Paso 16"
+(17)	checkout feature/Ticket221
+(18)	stash apply
+	anhadir pasos 16 a 17
+(19)	add . + commit -m "Paso 19"
+(20)	checkout develop
+(21)	branch feature/Ticket222
+(22)	checkout feature/Ticket220
+	recursiva			es recursiva, porque hay
+				 	una desviacion entre estas
+					ramas
+(24)	add . + commit -m "Paso 24"
+(25)	checkout develop
+(26)	merge --no-ff feature/Ticket220
+(27)	merge --no-ff feature/Ticket221	hay conflictos y se arreglan
+	add . + commit
+(29)	add . + commit -m "Paso 29"
+(30)	tag -a "Step29" -m "Tag a commit 29"
+(31)	push --set-upstream origin develop
+(32)	checkout feature/Ticket222
+(33)	reset <ultimo commit develop>
